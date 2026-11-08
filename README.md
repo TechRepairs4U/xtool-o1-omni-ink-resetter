@@ -4,6 +4,10 @@
 
 A Windows app for viewing your xTool O1 Omni printer's ink levels and manually resetting the recorded level after you have refilled a cartridge.
 
+![xTool O1 Omni Ink Resetter showing the UV + DT ink and maintenance dashboard](screenshots/app-preview.png)
+
+*UV + DT layout shown with sample readings in offline preview.*
+
 ## Download
 
 [Download xTool O1 Omni Ink Resetter v1.0.0 for Windows](https://github.com/TechRepairs4U/xtool-o1-omni-ink-resetter/releases/download/v1.0.0/xTool-O1-Omni-Ink-Resetter-v1.0.0.exe)
