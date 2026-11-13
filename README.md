@@ -1,6 +1,6 @@
 # xTool O1 Omni Ink Resetter
 
-**Version 1.0.2 · Made by TechRepairs4U**
+**Version 1.0.3 · Made by TechRepairs4U**
 
 A Windows app for viewing your xTool O1 Omni printer's ink levels and manually resetting the recorded level after you have refilled a cartridge.
 
@@ -10,7 +10,7 @@ A Windows app for viewing your xTool O1 Omni printer's ink levels and manually r
 
 ## Download
 
-[Download xTool O1 Omni Ink Resetter v1.0.2 for Windows](https://github.com/TechRepairs4U/xtool-o1-omni-ink-resetter/releases/download/v1.0.2/xTool-O1-Omni-Ink-Resetter-v1.0.2.exe)
+[Download xTool O1 Omni Ink Resetter v1.0.3 for Windows](https://github.com/TechRepairs4U/xtool-o1-omni-ink-resetter/releases/download/v1.0.3/xTool-O1-Omni-Ink-Resetter-v1.0.3.exe)
 
 Download the `.exe` and open it on a Windows PC. Connect the PC to the same local network as your printer.
 
@@ -38,7 +38,15 @@ You can choose a result before the scan finishes, stop the search, or save sever
 
 Network search checks connected private Wi-Fi/Ethernet networks. It cannot find a printer at another location over the internet, and guest Wi-Fi isolation or a VPN may prevent discovery. Very large networks are limited to the nearest 65,536 addresses, with the limit shown in the app.
 
-## Version 1.0.1: printer login update
+## Pairing with your printer
+
+The pairing screen now shows a circular button with a spinning light-blue ring while waiting for confirmation. Press the illuminated **Start/Stop button on the physical printer once**, then keep the app open. The ring stays still if reduced motion is enabled on your PC.
+
+![Pairing prompt with an animated light-blue ring](screenshots/pairing.gif)
+
+*Pairing-screen preview; no printer is connected in this illustration.*
+
+### Printer login update from version 1.0.1
 
 This update adds the newer printer-confirmed pairing flow to address **406 guest login rejected** errors on firmware that requires pairing. Successful pairing is remembered for future connections. The app now waits for you to click Connect and keeps any connection error visible so it can be shared for troubleshooting.
 
@@ -60,8 +68,8 @@ This is an independent utility by TechRepairs4U, not an official xTool applicati
 
 ## File verification
 
-SHA-256 for `xTool-O1-Omni-Ink-Resetter-v1.0.2.exe`:
+SHA-256 for `xTool-O1-Omni-Ink-Resetter-v1.0.3.exe`:
 
 ```text
-9d051b8b05585379ca4c080c2f7ab35aa415074fef198902963252f0e6ff0e3a
+e3f0ab2e129bd63a2fb47d3f55990272c09ad59424696f068a78a74153779a5e
 ```
