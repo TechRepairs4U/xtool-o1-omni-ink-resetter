@@ -1,6 +1,6 @@
 # xTool O1 Omni Ink Resetter
 
-**Version 1.0.1 · Made by TechRepairs4U**
+**Version 1.0.2 · Made by TechRepairs4U**
 
 A Windows app for viewing your xTool O1 Omni printer's ink levels and manually resetting the recorded level after you have refilled a cartridge.
 
@@ -10,14 +10,14 @@ A Windows app for viewing your xTool O1 Omni printer's ink levels and manually r
 
 ## Download
 
-[Download xTool O1 Omni Ink Resetter v1.0.1 for Windows](https://github.com/TechRepairs4U/xtool-o1-omni-ink-resetter/releases/download/v1.0.1/xTool-O1-Omni-Ink-Resetter-v1.0.1.exe)
+[Download xTool O1 Omni Ink Resetter v1.0.2 for Windows](https://github.com/TechRepairs4U/xtool-o1-omni-ink-resetter/releases/download/v1.0.2/xTool-O1-Omni-Ink-Resetter-v1.0.2.exe)
 
 Download the `.exe` and open it on a Windows PC. Connect the PC to the same local network as your printer.
 
 ## What it does
 
 - Shows the ink levels and maintenance-tank information reported by your printer.
-- Helps find printers on a local network and lets you save their addresses.
+- Automatically detects your connected Wi-Fi/Ethernet networks, finds printers and lets you save them.
 - Lets you manually update a cartridge's recorded ink level after refilling it.
 - Provides layouts for **Single UV**, **Dual UV**, and **UV + DT (fabric)**.
 - Shows the Dual UV expansion inks separately: **Rigid White (RW)**, **Flexible White (FW)**, **Fluorescent Red (FR)** and **Fluorescent Yellow (FY)**.
@@ -25,12 +25,18 @@ Download the `.exe` and open it on a Windows PC. Connect the PC to the same loca
 ## Getting started
 
 1. Choose your printer model.
-2. Enter its IP address, or click **Search network** and enter your local network range, such as `192.168.1.0/24`.
-3. Select the printer and click **Connect**. If a pairing message appears, press the printer's illuminated **Start/Stop button once** and keep the app open.
+2. Click **Find printers**. The search starts automatically — no IP address or network range to enter.
+3. Choose **Use printer**, then click **Connect**. If a pairing message appears, press the printer's illuminated **Start/Stop button once** and keep the app open.
 4. Open **Ink & maintenance** to view the cartridges.
 5. After physically refilling a cartridge, use its **Refill** button and follow the confirmation steps.
 
-Network search needs the correct local range; it cannot find a printer at another location over the internet.
+You can choose a result before the scan finishes, stop the search, or save several printers. **Search again** detects the current network if you have changed Wi-Fi.
+
+![Automatic network search with two sample printers](screenshots/network-search.png)
+
+*Search layout shown with sample results.*
+
+Network search checks connected private Wi-Fi/Ethernet networks. It cannot find a printer at another location over the internet, and guest Wi-Fi isolation or a VPN may prevent discovery. Very large networks are limited to the nearest 65,536 addresses, with the limit shown in the app.
 
 ## Version 1.0.1: printer login update
 
@@ -54,8 +60,8 @@ This is an independent utility by TechRepairs4U, not an official xTool applicati
 
 ## File verification
 
-SHA-256 for `xTool-O1-Omni-Ink-Resetter-v1.0.1.exe`:
+SHA-256 for `xTool-O1-Omni-Ink-Resetter-v1.0.2.exe`:
 
 ```text
-c31c549b1dfa57a5f9676a983af8670cf2607f292afd18b2f3c39dc64ebeed03
+9d051b8b05585379ca4c080c2f7ab35aa415074fef198902963252f0e6ff0e3a
 ```
