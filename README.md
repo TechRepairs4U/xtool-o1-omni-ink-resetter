@@ -1,6 +1,6 @@
 # xTool O1 Omni Ink Resetter
 
-**Version 1.0.4 · Made by TechRepairs4U**
+**Version 1.0.5 · Made by TechRepairs4U**
 
 A Windows app for viewing your xTool O1 Omni printer's ink levels and manually resetting the recorded level after you have refilled a cartridge.
 
@@ -10,7 +10,7 @@ A Windows app for viewing your xTool O1 Omni printer's ink levels and manually r
 
 ## Download
 
-[Download xTool O1 Omni Ink Resetter v1.0.4 for Windows](https://github.com/TechRepairs4U/xtool-o1-omni-ink-resetter/releases/download/v1.0.4/xTool-O1-Omni-Ink-Resetter-v1.0.4.exe)
+[Download xTool O1 Omni Ink Resetter v1.0.5 for Windows](https://github.com/TechRepairs4U/xtool-o1-omni-ink-resetter/releases/download/v1.0.5/xTool-O1-Omni-Ink-Resetter-v1.0.5.exe)
 
 Download the `.exe` and open it on a Windows PC. Connect the PC to the same local network as your printer.
 
@@ -18,6 +18,8 @@ Download the `.exe` and open it on a Windows PC. Connect the PC to the same loca
 
 - Shows the ink levels and maintenance-tank information reported by your printer.
 - Automatically detects your connected Wi-Fi/Ethernet networks, finds printers and lets you save them.
+- Verifies the xTool O1 model and unique identity before listing a discovered printer.
+- Groups multiple addresses for the same printer into one result, with a printer picture and an address selector.
 - Also lets you enter the printer's IP address manually and save it for next time.
 - Lets you manually update a cartridge's recorded ink level after refilling it.
 - Provides layouts for **Single UV**, **Dual UV**, and **UV + DT (fabric)**.
@@ -37,7 +39,9 @@ For manual entry, use an address such as `192.168.1.100`. You can add a port, su
 
 ![Automatic network search with two sample printers](screenshots/network-search.png)
 
-*Search layout shown with sample results.*
+*Search preview with sample identities: the workshop printer has two addresses but appears once.*
+
+Only devices that return an O1 model code and a usable serial number or device ID appear in the results. If a printer is missing, wake it and retry, or use manual IP entry. Devices that cannot be verified stay hidden. When one printer has several addresses, choose the address from its dropdown before clicking **Use printer**. **Save all printers** saves one address per printer.
 
 Network search checks connected private Wi-Fi/Ethernet networks. It cannot find a printer at another location over the internet, and guest Wi-Fi isolation or a VPN may prevent discovery. Very large networks are limited to the nearest 65,536 addresses, with the limit shown in the app.
 
@@ -77,8 +81,8 @@ This is an independent utility by TechRepairs4U, not an official xTool applicati
 
 ## File verification
 
-SHA-256 for `xTool-O1-Omni-Ink-Resetter-v1.0.4.exe`:
+SHA-256 for `xTool-O1-Omni-Ink-Resetter-v1.0.5.exe`:
 
 ```text
-68b9000b243a0bc375d560c4e6c427a539adf89409078d522ab8dfd850d58fe4
+1abb3e3efafbb8bdd2d4c6d0297028a9ed42296dfd8b73f93ff102f7896585e0
 ```
