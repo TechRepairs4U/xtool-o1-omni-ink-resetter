@@ -1,6 +1,6 @@
 # xTool O1 Omni Ink Resetter
 
-**Version 1.0.3 · Made by TechRepairs4U**
+**Version 1.0.4 · Made by TechRepairs4U**
 
 A Windows app for viewing your xTool O1 Omni printer's ink levels and manually resetting the recorded level after you have refilled a cartridge.
 
@@ -10,7 +10,7 @@ A Windows app for viewing your xTool O1 Omni printer's ink levels and manually r
 
 ## Download
 
-[Download xTool O1 Omni Ink Resetter v1.0.3 for Windows](https://github.com/TechRepairs4U/xtool-o1-omni-ink-resetter/releases/download/v1.0.3/xTool-O1-Omni-Ink-Resetter-v1.0.3.exe)
+[Download xTool O1 Omni Ink Resetter v1.0.4 for Windows](https://github.com/TechRepairs4U/xtool-o1-omni-ink-resetter/releases/download/v1.0.4/xTool-O1-Omni-Ink-Resetter-v1.0.4.exe)
 
 Download the `.exe` and open it on a Windows PC. Connect the PC to the same local network as your printer.
 
@@ -18,6 +18,7 @@ Download the `.exe` and open it on a Windows PC. Connect the PC to the same loca
 
 - Shows the ink levels and maintenance-tank information reported by your printer.
 - Automatically detects your connected Wi-Fi/Ethernet networks, finds printers and lets you save them.
+- Also lets you enter the printer's IP address manually and save it for next time.
 - Lets you manually update a cartridge's recorded ink level after refilling it.
 - Provides layouts for **Single UV**, **Dual UV**, and **UV + DT (fabric)**.
 - Shows the Dual UV expansion inks separately: **Rigid White (RW)**, **Flexible White (FW)**, **Fluorescent Red (FR)** and **Fluorescent Yellow (FY)**.
@@ -25,12 +26,14 @@ Download the `.exe` and open it on a Windows PC. Connect the PC to the same loca
 ## Getting started
 
 1. Choose your printer model.
-2. Click **Find printers**. The search starts automatically — no IP address or network range to enter.
-3. Choose **Use printer**, then click **Connect**. If a pairing message appears, press the printer's illuminated **Start/Stop button once** and keep the app open.
+2. Click **Find printers** to search automatically, or type the printer's IP address into **Printer IP address**.
+3. If scanning, choose **Use printer**. Then click **Connect** or press Enter in the IP address box. If a pairing message appears, press the printer's illuminated **Start/Stop button once** and keep the app open.
 4. Open **Ink & maintenance** to view the cartridges.
 5. After physically refilling a cartridge, use its **Refill** button and follow the confirmation steps.
 
 You can choose a result before the scan finishes, stop the search, or save several printers. **Search again** detects the current network if you have changed Wi-Fi.
+
+For manual entry, use an address such as `192.168.1.100`. You can add a port, such as `192.168.1.100:8080`; the default is 8080. **Save as…** saves the address for next time. Typing an address does not connect until you click Connect or press Enter.
 
 ![Automatic network search with two sample printers](screenshots/network-search.png)
 
@@ -52,6 +55,12 @@ This update adds the newer printer-confirmed pairing flow to address **406 guest
 
 The included engine has been updated to upstream 1.0.31. Pairing was introduced upstream for firmware V0.14.11, with the older login retained for V0.13.1. The affected physical printer still needs to be tested; if the error continues, share the full message and your printer's firmware version.
 
+## If the app cannot start
+
+Click **Copy details** in the error window, then paste the report into your message to TechRepairs4U. You do not need PowerShell. The report includes the app and Windows versions, startup stage and file checksums to help identify the problem. Nothing is sent automatically.
+
+If copying is unavailable, the details are selected so you can press **Ctrl+C**. Version 1.0.4 adds this diagnostic window; the cause of the integrity-check error reported on another PC still needs the copied details.
+
 ## Support the app
 
 If this app has helped you, consider buying me a coffee. Donations help support future updates and are always optional.
@@ -68,8 +77,8 @@ This is an independent utility by TechRepairs4U, not an official xTool applicati
 
 ## File verification
 
-SHA-256 for `xTool-O1-Omni-Ink-Resetter-v1.0.3.exe`:
+SHA-256 for `xTool-O1-Omni-Ink-Resetter-v1.0.4.exe`:
 
 ```text
-e3f0ab2e129bd63a2fb47d3f55990272c09ad59424696f068a78a74153779a5e
+68b9000b243a0bc375d560c4e6c427a539adf89409078d522ab8dfd850d58fe4
 ```
